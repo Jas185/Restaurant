@@ -47,30 +47,6 @@ p{
 }
 
 
-.carousel {
-    overflow: hidden;
-    width: 100%;
-    background: #f8f8f8;
-    padding: 20px 0;
-}
-
-.carousel-track {
-    display: flex;
-    width: 200%; /* Augmente pour permettre le défilement */
-    animation: scroll 10s linear infinite; /* Animation */
-}
-
-.carousel-track img {
-    width: 300px;
-    margin: 0 15px;
-    border-radius: 10px;
-}
-
-/* Animation pour faire défiler les images */
-@keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); } /* Fait défiler la moitié */
-}
 
 .container.mt-5 {
     margin-top: 15px !important; /* Réduit l'espace au-dessus de la section */
