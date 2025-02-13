@@ -1,0 +1,46 @@
+.display-sect{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    display: inline-block; /* Permet de mieux gérer la taille */
+}
+
+.image img {
+    width: 100%;
+    display: block;
+    transition: 0.3s ease;
+}
+
+.image:hover img {
+    filter: blur(5px) brightness(0.7); /* Flou + assombrissement */
+    transform: scale(1.1); /* Zoom */
+}
+
+.image .caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.image:hover .caption {
+    opacity: 1; /* Rend le texte visible */
+}
+
+
+
